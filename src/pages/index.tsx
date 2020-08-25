@@ -70,6 +70,7 @@ const Dashboard: NextPage<{ data: Champion[] }> = () => {
                   <div>
                     <strong>{item.name}</strong>
                     <p>{item.title}</p>
+                    <p>{item.blurb}</p>
                   </div>
                 </a>
               </Link>

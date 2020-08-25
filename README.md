@@ -1,30 +1,72 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">
+    <img alt="Twitter-Clone" src=".https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltcfa4652c8d383f56/5e21837f63d1b6503160d39b/Home-page.jpg"/>
+    <br>Who is this champiom ?<br/>
+    React.js | Next.js
+</h1>
 
-## Getting Started
+<p align="center">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/luminuszz/Twitter-Clone?style=flat-square">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/luminuszz/Twitter-Clone?style=flat-square">
+  <img alt="GitHub" src="https://img.shields.io/github/license/luminuszz/Twitter-Clone?style=flat-square">
+</p>
+<p align="center">
+  <a href="#bookmark-About">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#rocket-Stacks">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-run-this-project">Como Executar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-license">License</a>
+</p>
 
-First, run the development server:
+## :bookmark: About
 
-```bash
-npm run dev
-# or
-yarn dev
+  ### Description:
+
+   The **Who is this champiom ?** is a platform to get to know more of your favorite League of Legends champions
+
+  ### Motivation:
+
+  Create a practical example using Nextjs static generation
+
+## :rocket: Stacks
+
+-  [Typescript](https://www.typescriptlang.org/)
+-  [ReactJS](https://reactjs.org/)
+-  [Next.js](https://nextjs.org/)
+-  [styled-components](https://styled-components.com/)
+
+
+## 💻 Run this project
+
+- ### **Requirements**
+
+  - [Node.js](https://nodejs.org/en/)
+  - [Git](https://git-scm.com/)
+  - [NPM](https://www.npmjs.com/) ou [Yarn](https://yarnpkg.com/).
+
+1. Clone repository
+
+```sh
+  $ git clone https://github.com/luminuszz/Twiter-Clone.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Run the app
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```sh
+  cd project
+  yarn dev
+```
 
-## Learn More
+ ## :nerd_face:	 Assets
+ - :rocket: [Production](https://who-is-this-champion-54c6v7033.vercel.app/)
+ - :monocle_face:	[Post on linkedin](https://www.linkedin.com/feed/update/urn:li:ugcPost:6704138632204189696/)
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+ ### Me
+ - [My Github](https://github.com/luminuszz)
+ - [My linkedin](https://www.linkedin.com/in/davi-ribeiro-luminuszz/)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## :memo: LICENSE
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is under the MIT license [LICENSE](LICENSE.md).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+---

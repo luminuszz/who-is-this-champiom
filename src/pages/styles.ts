@@ -76,10 +76,14 @@ export const Repositories = styled.div`
         margin-top: 4px;
       }
     }
-  }
-  svg {
-    margin-left: auto;
-    color: #cbcbd6;
+
+    @media (max-width: 450px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
   }
 `;
 

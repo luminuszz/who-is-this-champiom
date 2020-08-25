@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable no-plusplus */
 /* eslint-disable camelcase */
 import Input from '@/components/Input';
@@ -9,9 +10,9 @@ import { toast } from 'react-toastify';
 
 import api from '../services/api';
 import { capitalizeFirstLetter } from '../utils/toUpercase';
-import { Repositories, Title, Error, Form } from './styles';
+import { Repositories, Title, Form } from './styles';
 
-interface Champion {
+export interface Champion {
   id: string;
   name: string;
   title: string;
@@ -49,8 +50,8 @@ const Dashboard: NextPage<{ data: Champion[] }> = ({ data }) => {
 
       <Repositories>
         {champions.map(champion => (
-          <Link href="/sad" key={champion.key}>
-            <a href="/algo">
+          <Link href={`/champiom/${champion.id}`} key={champion.key}>
+            <a>
               <img
                 src={`https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${champion.name}_0.jpg`}
                 alt={champion.name}

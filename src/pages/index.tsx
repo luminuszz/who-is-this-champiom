@@ -5,6 +5,7 @@ import { FormHandles, SubmitHandler } from '@unform/core';
 import { GetStaticProps, NextPage } from 'next';
 import Link from 'next/link';
 import React, { useState, useRef, useCallback, useMemo } from 'react';
+import { toast } from 'react-toastify';
 
 import api from '../services/api';
 import { capitalizeFirstLetter } from '../utils/toUpercase';
@@ -28,15 +29,19 @@ const Dashboard: NextPage<{ data: Champion[] }> = ({ data }) => {
   }, [champions]);
 
   const handleAddRepository = useCallback(async ({ champion }) => {
-    const name = capitalizeFirstLetter(champion);
-    const { data } = await api.get(`champion/${name}.json`);
+    try {
+      const name = capitalizeFirstLetter(champion);
+      const { data: currentChampiom } = await api.get(`champion/${name}.json`);
 
-    setChampions(Object.values(data.data));
+      setChampions(Object.values(currentChampiom.data));
+    } catch {
+      toast.error('Opa ! Parece que esse campeão não existe');
+    }
   }, []);
 
   return (
     <>
-      <Title>Procure seus Campeões favoritos no legue of legends !</Title>
+      <Title>Procure seus campeões favoritos do Legue of Legends !</Title>
       <Form ref={formRef} onSubmit={handleAddRepository}>
         <Input placeholder="Informe o nome do campeão" name="champion" />
         <button type="submit">Pesquisar</button>
@@ -44,8 +49,8 @@ const Dashboard: NextPage<{ data: Champion[] }> = ({ data }) => {
 
       <Repositories>
         {champions.map(champion => (
-          <Link href="/sad">
-            <a href="/algo" key={champion.key}>
+          <Link href="/sad" key={champion.key}>
+            <a href="/algo">
               <img
                 src={`https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${champion.name}_0.jpg`}
                 alt={champion.name}

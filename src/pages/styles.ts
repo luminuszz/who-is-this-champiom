@@ -1,5 +1,6 @@
 import { Form as UnformForm } from '@unform/web';
 import { shade } from 'polished';
+import { animated } from 'react-spring';
 import styled from 'styled-components';
 
 export const Title = styled.h1`
@@ -79,6 +80,12 @@ export const Repositories = styled.div`
   svg {
     margin-left: auto;
     color: #cbcbd6;
+  }
+`;
+
+export const AnimatedDiv = styled(animated.div)`
+  & + div {
+    margin-top: 20px;
   }
 `;
 

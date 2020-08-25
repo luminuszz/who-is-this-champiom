@@ -33,11 +33,11 @@ export const RepositoryInfo = styled.section`
       margin-left: 24px;
       strong {
         font-size: 18px;
-        color: black;
+        color: white;
       }
       p {
         font-size: 18px;
-        color: black;
+        color: white;
         margin-top: 4px;
       }
     }
@@ -53,12 +53,12 @@ export const RepositoryInfo = styled.section`
       strong {
         display: block;
         font-size: 36px;
-        color: black;
+        color: white;
       }
       span {
         display: block;
         margin-top: 4px;
-        color: black;
+        color: white;
       }
     }
   }
@@ -99,5 +99,88 @@ export const Issues = styled.div`
   svg {
     margin-left: auto;
     color: #cbcbd6;
+  }
+`;
+
+export const Habilities = styled.div`
+  margin-top: 30px;
+  a {
+    background: #fff;
+    border-radius: 5px;
+    width: 100%;
+    padding: 24px;
+    display: block;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s;
+    &:hover {
+      transform: translate(10px);
+    }
+    & + a {
+      margin-top: 16px;
+    }
+    img {
+      border-radius: 50%;
+    }
+    div {
+      margin: 0 16px;
+      flex: 1;
+      strong {
+        font-size: 20px;
+        color: #3d3d4d;
+      }
+      p {
+        font-size: 18px;
+        color: #a8a8b3;
+        margin-top: 4px;
+      }
+    }
+  }
+  svg {
+    margin-left: auto;
+    color: #cbcbd6;
+  }
+`;
+
+export const Title = styled.h3`
+  color: white;
+  margin: 20px 0;
+  font-size: 20px;
+`;
+
+export const Skins = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: 0.2s;
+
+    &:hover {
+      transform: translateY(-10px);
+    }
+
+    & + div {
+      margin-left: 20px;
+    }
+
+    img {
+      width: 100px;
+      height: 100px;
+
+      border-radius: 50%;
+    }
+
+    p {
+      text-align: center;
+      font-size: 15px;
+      color: #a8a8b3;
+      padding-top: 4px;
+    }
   }
 `;

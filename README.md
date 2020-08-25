@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="Twitter-Clone" src=".https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltcfa4652c8d383f56/5e21837f63d1b6503160d39b/Home-page.jpg"/>
+    <img alt="" src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltcfa4652c8d383f56/5e21837f63d1b6503160d39b/Home-page.jpg"/>
     <br>Who is this champiom ?<br/>
     React.js | Next.js
 </h1>
